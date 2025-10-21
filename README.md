@@ -27,3 +27,15 @@
 ### ✅ Validate Projects' Naming Conventions
 - `validate_naming_convention()` checks whether a dataset contains the mandatory variables and only valid entries as defined in a project's naming convention (e.g., `EcoForest_naming`). It also adds standardized variable descriptions to the dataset.
 - `view_naming_convention()` prints a human-readable overview of the naming convention.
+
+
+## 🔧 Installation
+
+You can install the development version of `metadataTools` directly from GitHub using the `remotes` package:
+
+```r
+# Install remotes if not already installed
+install.packages("remotes")
+
+# Install metadataTools from GitHub
+remotes::install_github("asplundj/metadataTools")

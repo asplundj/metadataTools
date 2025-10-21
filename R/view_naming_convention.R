@@ -19,6 +19,7 @@ view_naming_convention <- function(naming_object) {
       mandatory = ifelse(mandatory, "Yes", "No")
     ) %>%
     flextable::flextable() %>%
-    flextable::fontsize(size = 8, part = "all") %>% 
-    flextable::autofit()
+    flextable::fontsize(size = 8, part = "all") %>%
+    flextable::width(j = "valid_values", width = 3) %>%
+    flextable::set_table_properties(layout = "autofit")
 }
