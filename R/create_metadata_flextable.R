@@ -36,7 +36,7 @@
 #'
 #' # Create metadata table
 #' ft <- create_metadata_table(df1)
-#' print(ft, preview = "html")
+#' print(ft)
 #'
 #' # Save table as HTML
 #' flextable::save_as_html(ft, path = "df1_metadata.html")

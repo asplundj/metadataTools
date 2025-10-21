@@ -28,7 +28,7 @@ like \code{validate_naming_convention()}, which checks that mandatory variables 
 that they only contain valid values, and attaches descriptions for the standard variables.
 }
 \examples{
-library(tidyverse)
+library(dplyr)
 # Flextable of naming convention
 view_naming_convention(EcoForest_naming)
 
@@ -44,15 +44,16 @@ df1 <- data.frame(
 validate_naming_convention(df1, EcoForest_naming)
 
 # Example of how to create a naming convention tibble manually:
-EcoForest_naming <- tibble(
+EcoForest_naming <- data.frame(
   name = c("Site_ID", "Forest_Type", "Plot_ID", "Plot_Nr", "Sub_plot", "Sub_plot_FULL", "Year", "Date"),
   mandatory = c(TRUE, TRUE, TRUE, FALSE, FALSE, FALSE, FALSE, FALSE),
-  valid_values = list(
-    c("SKO", "GUL", "HEM", "BRA", "SAR", "OYT", "TRE", "HAL", "BLA", "STR", "MRK", "LAN"), #Valid values for Site_ID
-    c("CC", "NN"), #Valid value for Forest_Type
-    c("SKO_CC", "GUL_CC", "HEM_CC", "BRA_CC", "SAR_CC", "OYT_CC", "TRE_CC", "HAL_CC", "BLA_CC", "STR_CC", "MRK_CC", "LAN_CC", "SKO_NN","GUL_NN", "HEM_NN", "BRA_NN", "SAR_NN", "OYT_NN", "TRE_NN", "HAL_NN", "BLA_NN", "STR_NN", "MRK_NN", "LAN_NN"), #Valid values for Plot_ID
+  valid_values = I(list(
+    c("SKO", "GUL", "HEM", "BRA", "SAR", "OYT", "TRE", "HAL", "BLA", "STR", "MRK", "LAN"),
+    c("CC", "NN"),
+    c("SKO_CC", "GUL_CC", "HEM_CC", "BRA_CC", "SAR_CC", "OYT_CC", "TRE_CC", "HAL_CC", "BLA_CC", "STR_CC", "MRK_CC", "LAN_CC",
+      "SKO_NN", "GUL_NN", "HEM_NN", "BRA_NN", "SAR_NN", "OYT_NN", "TRE_NN", "HAL_NN", "BLA_NN", "STR_NN", "MRK_NN", "LAN_NN"),
     NULL, NULL, NULL, NULL, NULL
-  ),
+  )),
   default_description = c(
     "Three-letter abbreviation of site names",
     "Forest Management Category (NN = near natural; CC = previous clearcut)",
@@ -62,7 +63,9 @@ EcoForest_naming <- tibble(
     "Combination of Plot_ID and Sub_plot (e.g., SKO_NN_1)",
     "Year in YYYY format",
     "Date in YYYY-MM-DD format"
-  ),comment=rep("", 8)
+  ),
+  comment = rep("", 8),
+  stringsAsFactors = FALSE
 )
 }
 \keyword{datasets}

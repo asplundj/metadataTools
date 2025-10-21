@@ -17,5 +17,5 @@ Displays the naming convention tibble using flextable formatting.
 }
 \examples{
 ft<-view_naming_convention(EcoForest_naming)
-print(ft, preview = "html")
+print(ft)
 }

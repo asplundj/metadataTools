@@ -6,7 +6,7 @@
 #' @return A flextable object
 #' @examples
 #' ft<-view_naming_convention(EcoForest_naming)
-#' print(ft, preview = "html")
+#' print(ft)
 #' @export
 view_naming_convention <- function(naming_object) {
   format_valid <- function(x) {
