@@ -39,3 +39,4 @@ install.packages("remotes")
 
 # Install metadataTools from GitHub
 remotes::install_github("asplundj/metadataTools")
+```
