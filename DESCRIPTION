@@ -1,0 +1,24 @@
+Package: metadataTools
+Type: Package
+Title: Helpers to Document Data and Render Metadata Tables
+Version: 0.1.0
+Authors@R: 
+    person(given = "Johan", family = "Asplund", role = c("aut", "cre"),
+           email = "johan.asplund@nmbu.no", comment = c(ORCID = "0000-0001-5610-4480"))
+Description: Utilities to attach units to data frame columns, generate a plain-text
+    README that documents datasets, and create an HTML-friendly flextable metadata table.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.0)
+Imports:
+    flextable,
+    officer
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+	dplyr
+Config/testthat/edition: 3
+LazyData: true

@@ -1,0 +1,10 @@
+.Rhistory
+.RData
+.Rproj.user
+testingscript.R
+metadataTools.Rproj
+output
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
