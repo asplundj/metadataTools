@@ -19,9 +19,6 @@
 #'
 #' @examples
 #' library(dplyr)
-#'# Flextable of naming convention
-#' view_naming_convention(EcoForest_naming)
-#'
 #'
 #' # Create a dataset that matches the naming convention
 #' df1 <- data.frame(

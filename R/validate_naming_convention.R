@@ -3,12 +3,12 @@
 #' Adds description attributes to columns and checks for missing mandatory variables and invalid values.
 #'
 #' @param df A data frame to validate.
-#' @param naming_object A tibble with columns:
+#' @param naming_object A data frame with columns:
 #'   - `name` (character): column name in `df`
 #'   - `mandatory` (logical): whether the column is required
 #'   - `valid_values` (list-column): allowed values for each variable (or NULL for no check)
 #'   - `default_description` (character): description to store as a column attribute
-#' @return The annotated data frame (invisibly).
+#' @return The annotated data frame.
 #' @examples
 #' # Create dataset
 #' df1 <- data.frame(

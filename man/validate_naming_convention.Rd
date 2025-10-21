@@ -9,7 +9,7 @@ validate_naming_convention(df, naming_object)
 \arguments{
 \item{df}{A data frame to validate.}
 
-\item{naming_object}{A tibble with columns:
+\item{naming_object}{A data frame with columns:
 \itemize{
 \item \code{name} (character): column name in \code{df}
 \item \code{mandatory} (logical): whether the column is required
@@ -18,7 +18,7 @@ validate_naming_convention(df, naming_object)
 }}
 }
 \value{
-The annotated data frame (invisibly).
+The annotated data frame.
 }
 \description{
 Adds description attributes to columns and checks for missing mandatory variables and invalid values.

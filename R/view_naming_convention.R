@@ -2,11 +2,14 @@
 #'
 #' Displays the naming convention tibble using flextable formatting.
 #'
-#' @param naming_object A tibble with columns: name, mandatory, valid_values, default_description
+#' @param naming_object A dataset with columns: name, mandatory, valid_values, default_description
 #' @return A flextable object
 #' @examples
 #' ft<-view_naming_convention(EcoForest_naming)
-#' print(ft)
+#' ft
+#'
+#'# Save table as HTML
+#' flextable::save_as_html(ft, path = "EcoForest_naming_convention.html")
 #' @export
 view_naming_convention <- function(naming_object) {
   format_valid <- function(x) {
