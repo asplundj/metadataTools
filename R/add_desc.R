@@ -10,14 +10,10 @@
 #' @return The modified data frame with description (and possibly unit) attributes.
 #'
 #' @examples
-#' \dontrun{
 #' library(dplyr)
 #' df <- iris %>%
-#'   add_desc(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width [cm]")
+#'   add_desc(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width [cm]") #cm will be stored as unit for sepal width, while no unit will be stored for sepal length
 #'
-#' str(df)
-#' }
-
 #' @export
 add_desc <- function(.data, ...) {
   stopifnot(is.data.frame(.data))

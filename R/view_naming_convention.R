@@ -5,7 +5,8 @@
 #' @param naming_object A tibble with columns: name, mandatory, valid_values, default_description
 #' @return A flextable object
 #' @examples
-#' view_naming_convention(EcoForest_naming)
+#' ft<-view_naming_convention(EcoForest_naming)
+#' print(ft, preview = "html")
 #' @export
 view_naming_convention <- function(naming_object) {
   format_valid <- function(x) {

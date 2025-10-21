@@ -76,7 +76,7 @@
 #' )
 
 #'
-#' @seealso [set_metadata_defaults()], [add_unit()], [add_desc]
+#' @seealso [set_metadata_defaults()], [add_unit()], [add_desc()]
 #' @export
 create_readme <- function(...,
                           file_path = "00_README.txt",

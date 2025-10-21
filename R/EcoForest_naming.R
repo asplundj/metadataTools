@@ -18,7 +18,8 @@
 #' }
 #'
 #' @examples
-#' # Flextable of naming convention
+#' library(tidyverse)
+#'# Flextable of naming convention
 #' view_naming_convention(EcoForest_naming)
 #'
 #'

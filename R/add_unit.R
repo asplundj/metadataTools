@@ -9,14 +9,9 @@
 #' @return The modified data frame with unit attributes added to specified columns.
 #'
 #' @examples
-#' \dontrun{
 #' library(dplyr)
 #' df <- iris %>%
 #'   add_unit(Sepal.Length = "cm", Sepal.Width = "cm")
-#'
-#' str(df)
-#' }
-
 #' @export
 add_unit <- function(.data, ...) {
   stopifnot(is.data.frame(.data))

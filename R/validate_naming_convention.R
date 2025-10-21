@@ -10,12 +10,16 @@
 #'   - `default_description` (character): description to store as a column attribute
 #' @return The annotated data frame (invisibly).
 #' @examples
+#' # Create dataset
 #' df1 <- data.frame(
 #'   Site_ID = rep(c("BLA", "BRA", "GUL", "HAL", "HEM", "LAN", "MRK", "OYT", "SAR", "SKO", "STR", "TRE"), each = 2),
 #'   Forest_Type = rep(c("CC", "NN"), times = 12)) %>% 
 #'   mutate(Plot_ID = paste(Site_ID, Forest_Type, sep = "_"))
 #'
+#' # Check if all mandatory variables are included with only valid entries.
 #' df1 <- validate_naming_convention(df1, EcoForest_naming)
+#'
+#' #Check attribute added to Site_ID 
 #' attributes(df1$Site_ID)$description
 #' @export
 validate_naming_convention <- function(df, naming_object) {
