@@ -72,7 +72,7 @@ that they only contain valid values, and attaches descriptions for the standard 
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Flextable of naming convention</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="view_naming_convention.html">view_naming_convention</a></span><span class="op">(</span><span class="va">EcoForest_naming</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in naming_object %&gt;% dplyr::mutate(valid_values = sapply(valid_values,     format_valid), mandatory = ifelse(mandatory, "Yes", "No")) %&gt;%     flextable::flextable() %&gt;% flextable::fontsize(size = 8,     part = "all") %&gt;% flextable::autofit():</span> could not find function "%&gt;%"</span>
+<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in naming_object %&gt;% dplyr::mutate(valid_values = sapply(valid_values,     format_valid), mandatory = ifelse(mandatory, "Yes", "No")) %&gt;%     flextable::flextable() %&gt;% flextable::fontsize(size = 8,     part = "all") %&gt;% flextable::width(j = "valid_values", width = 3) %&gt;%     flextable::set_table_properties(layout = "autofit"):</span> could not find function "%&gt;%"</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># Create a dataset that matches the naming convention</span></span></span>
