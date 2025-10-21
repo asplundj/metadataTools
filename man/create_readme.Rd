@@ -105,5 +105,5 @@ create_readme(
 
 }
 \seealso{
-\code{\link[=set_metadata_defaults]{set_metadata_defaults()}}, \code{\link[=add_unit]{add_unit()}}, \link{add_desc}
+\code{\link[=set_metadata_defaults]{set_metadata_defaults()}}, \code{\link[=add_unit]{add_unit()}}, \code{\link[=add_desc]{add_desc()}}
 }

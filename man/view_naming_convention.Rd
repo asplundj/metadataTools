@@ -16,5 +16,6 @@ A flextable object
 Displays the naming convention tibble using flextable formatting.
 }
 \examples{
-view_naming_convention(EcoForest_naming)
+ft<-view_naming_convention(EcoForest_naming)
+print(ft, preview = "html")
 }

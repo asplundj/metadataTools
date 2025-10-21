@@ -24,11 +24,15 @@ The annotated data frame (invisibly).
 Adds description attributes to columns and checks for missing mandatory variables and invalid values.
 }
 \examples{
+# Create dataset
 df1 <- data.frame(
   Site_ID = rep(c("BLA", "BRA", "GUL", "HAL", "HEM", "LAN", "MRK", "OYT", "SAR", "SKO", "STR", "TRE"), each = 2),
   Forest_Type = rep(c("CC", "NN"), times = 12)) \%>\% 
   mutate(Plot_ID = paste(Site_ID, Forest_Type, sep = "_"))
 
+# Check if all mandatory variables are included with only valid entries.
 df1 <- validate_naming_convention(df1, EcoForest_naming)
+
+#Check attribute added to Site_ID 
 attributes(df1$Site_ID)$description
 }

@@ -20,11 +20,8 @@ square brackets (e.g., "Length \verb{[cm]}"), the content inside the brackets is
 as a "unit" attribute.
 }
 \examples{
-\dontrun{
 library(dplyr)
 df <- iris \%>\%
-  add_desc(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width [cm]")
+  add_desc(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width [cm]") #cm will be stored as unit for sepal width, while no unit will be stored for sepal length
 
-str(df)
-}
 }

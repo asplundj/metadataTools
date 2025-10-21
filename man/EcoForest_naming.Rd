@@ -28,6 +28,7 @@ like \code{validate_naming_convention()}, which checks that mandatory variables 
 that they only contain valid values, and attaches descriptions for the standard variables.
 }
 \examples{
+library(tidyverse)
 # Flextable of naming convention
 view_naming_convention(EcoForest_naming)
 

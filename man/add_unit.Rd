@@ -19,11 +19,7 @@ This function allows you to add "unit" attributes to specified columns in a data
 It is designed to work with the tidyverse and can be used with the pipe (\verb{\%>\%}) operator.
 }
 \examples{
-\dontrun{
 library(dplyr)
 df <- iris \%>\%
   add_unit(Sepal.Length = "cm", Sepal.Width = "cm")
-
-str(df)
-}
 }
