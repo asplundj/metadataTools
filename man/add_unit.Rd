@@ -16,7 +16,6 @@ The modified data frame with unit attributes added to specified columns.
 }
 \description{
 This function allows you to add "unit" attributes to specified columns in a data frame.
-It is designed to work with the tidyverse and can be used with the pipe (\verb{\%>\%}) operator.
 }
 \examples{
 library(dplyr)

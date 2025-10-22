@@ -16,6 +16,8 @@
 #'   Forest_Type = rep(c("CC", "NN"), times = 12)) %>% 
 #'   mutate(Plot_ID = paste(Site_ID, Forest_Type, sep = "_"))
 #'
+#' data(EcoForest_naming)
+#'
 #' # Check if all mandatory variables are included with only valid entries.
 #' df1 <- validate_naming_convention(df1, EcoForest_naming)
 #'

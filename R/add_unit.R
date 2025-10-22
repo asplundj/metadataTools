@@ -1,7 +1,6 @@
 #' Add unit attributes to data frame columns
 #'
 #' This function allows you to add "unit" attributes to specified columns in a data frame.
-#' It is designed to work with the tidyverse and can be used with the pipe (`%>%`) operator.
 #'
 #' @param .data A data frame.
 #' @param ... Named arguments where names are column names and values are unit strings.

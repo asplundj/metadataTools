@@ -9,7 +9,7 @@ add_desc(.data, ...)
 \arguments{
 \item{.data}{A data frame.}
 
-\item{...}{Named arguments where names are column names and values are description strings.}
+\item{...}{Column descriptions, either as named arguments (e.g., Sepal.Length = "Sepal length") or as a single named vector/list (e.g., c(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width \link{cm}")).}
 }
 \value{
 The modified data frame with description (and possibly unit) attributes.

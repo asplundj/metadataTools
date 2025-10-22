@@ -37,6 +37,8 @@ df1 <- data.frame(
 ) \%>\%
   dplyr::mutate(Plot_ID = paste(Site_ID, Forest_Type, sep = "_"))
 
+data(EcoForest_naming)
+
 # Validate the dataset against the naming convention
 validate_naming_convention(df1, EcoForest_naming)
 
