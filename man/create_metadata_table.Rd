@@ -46,7 +46,7 @@ df1 <- iris \%>\%
   add_unit(Sepal.Width = "cm")  # add unit if not set by add_desc
 
 # Add dataset-level description
-attr(df1, "description") <- "This famous (Fisher's or Anderson's) iris data set gives the measurements in centimeters of the variables sepal length and width and petal length and width, respectively, for 50 flowers from each of 3 species of iris. The species are Iris setosa, versicolor, and virginica."
+attr(df1, "description") <- "Sepal and petal lengths and widths measured on Iris species."
 
 # Create metadata table
 ft <- create_metadata_table(df1)

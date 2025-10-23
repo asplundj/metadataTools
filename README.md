@@ -6,7 +6,6 @@
 -   Generate human-readable README files for data repositories (e.g., DataverseNO)\
 -   Document and validate naming conventions for datasets
 
-See <https://asplundj.github.io/metadataTools/> for details and examples
 
 ## Features
 

@@ -22,6 +22,6 @@ as a "unit" attribute.
 \examples{
 library(dplyr)
 df <- iris \%>\%
-  add_desc(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width [cm]") #cm will be stored as unit for sepal width, while no unit will be stored for sepal length
+  add_desc(Sepal.Length = "Sepal length", Sepal.Width = "Sepal width `[cm]`") #cm will be stored as unit for sepal width, while no unit will be stored for sepal length
 
 }
